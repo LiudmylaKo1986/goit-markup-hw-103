@@ -1,6 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 .list {
     list-style: none;
 }
@@ -8,7 +14,35 @@ body {
     text-decoration: none;
 }
 /*----- herder-----*/
+.site.title {
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.site-connect {
+    margin-left: auto;
+}
+.header-nav {
+    position: absolute;
+    width: 281px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+    float: left;
+}
 .header-logo{
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
