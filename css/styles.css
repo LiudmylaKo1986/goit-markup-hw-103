@@ -1,6 +1,35 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -13,7 +42,7 @@ body {
 .link {
     text-decoration: none;
 }
-/*----- herder-----*/
+/*----- header-----*/
 .site.title {
     position: absolute;
     width: 1600px;
@@ -24,18 +53,11 @@ body {
 }
 .header-container {
     display: flex;
+    flex-direction: row;
     align-items: center;
 }
-.site-connect {
-    margin-left: auto;
-}
-.header-nav {
-    position: absolute;
-    width: 281px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
-    float: left;
+.site-nav {
+    display: flex;
 }
 .header-logo{
     position: absolute;
@@ -57,6 +79,17 @@ body {
 .header-nav .current {
     color: #2196F3;
 }
+.header-nav {
+    display: flex;
+    position: absolute;
+    width: 281px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
+    padding-left: 93px;
+    justify-content: space-between;
+    padding: 0px;
+}
 .header-list {
     font-weight: 500;
     font-size: 14px;
@@ -67,6 +100,12 @@ body {
 .header-list:hover, .header-list:focus {
     color: #2196F3;
 }
+.contact {
+    display: flex;
+    }
+.google {
+    
+}
 .header-contact {
     font-weight: 500;
     font-size: 14px;
@@ -74,13 +113,36 @@ body {
     letter-spacing: 0.02em;
     color: #757575;
 }
-.header-contact:hover, .header-contact:focus {
+.header-contact a {
+    color: #757575;
+}
+.contact-mail {
+    position: absolute;
+    width: 135px;
+    height: 16px;
+    left: 1078px;
+    top: 32px;
+}
+.contact-tel {
+    position: absolute;
+    width: 122px;
+    height: 16px;
+    left: 1263px;
+    top: 32px;
+}
+.contact-mail, .contact-tel:hover, .contact-mail, .contact-tel:focus {
     color: #2196F3;
 }
-.section-item {
-    background: #2F303A;
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 .section-nam {
+    position: absolute;
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -90,6 +152,11 @@ body {
     color: #FFFFFF;
 }
 .section-button {
+    position: absolute;
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    top: 430px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -106,6 +173,14 @@ body {
 .section-button:focus {
     background: #188CE8;  
 }
+.section-head {
+    position: absolute;
+    width: 1170px;
+    height: 98px;
+    left: 215px;
+    top: 774px;
+    padding-bottom: 92px;
+}
 .visually-hidden {
     position: absolute;
     white-space: nowrap;
@@ -117,6 +192,9 @@ body {
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
+}
+.section-bisnes {
+    display: flex;
 }
 .section-title {
     font-weight: 700;
@@ -135,15 +213,60 @@ body {
     letter-spacing: 0.03em;
     color: #757575;
 }
+.section-working {
+    position: absolute;
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 966px;
+    padding-bottom: 92px;
+}
 .section-name {
-    font-family: 'Roboto';
-    font-style: normal;
+    position: absolute;
+    width: 366px;
+    height: 42px;
+    left: 617px;
+    top: 966px;
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
+}
+.picture {
+    display: flex;
+    justify-content: space-between;
+}
+.section-team {
+    position: absolute;
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1446px;
+    background: #F5F4FA;
+}
+.section-nama {
+    position: absolute;
+    width: 264px;
+    height: 42px;
+    left: 668px;
+    top: 1540px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.team {
+    display: flex;
+    position: absolute;
+    width: 1170px;
+    height: 368px;
+    left: 215px;
+    top: 1632px;
 }
 .team-members {
     font-family: 'Roboto';
@@ -167,6 +290,11 @@ body {
 }
 /*-----foooter------*/
 .footer {
+    position: absolute;
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2094px;
     background-color: #2F303A;
 }
 .footer-logo {
