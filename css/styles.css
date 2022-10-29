@@ -44,11 +44,6 @@ img {
 }
 /*----- header-----*/
 .site.title {
-    position: absolute;
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
     background: #FFFFFF;
 }
 .header-container {
@@ -60,17 +55,16 @@ img {
     display: flex;
 }
 .header-logo{
-    position: absolute;
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: black;
+    width: 145px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
 }
 .header-color {
     font-family: 'Raleway';
@@ -81,14 +75,11 @@ img {
 }
 .header-nav {
     display: flex;
-    position: absolute;
-    width: 281px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
-    padding-left: 93px;
+    width: 281px; 
     justify-content: space-between;
-    padding: 0px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-right: 344px;
 }
 .header-list {
     font-weight: 500;
@@ -103,32 +94,31 @@ img {
 .contact {
     display: flex;
     }
-.google {
-    
-}
 .header-contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
     letter-spacing: 0.02em;
     color: #757575;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 .header-contact a {
     color: #757575;
 }
 .contact-mail {
-    position: absolute;
     width: 135px;
-    height: 16px;
-    left: 1078px;
-    top: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-left: 344px;
+   
 }
 .contact-tel {
-    position: absolute;
     width: 122px;
-    height: 16px;
-    left: 1263px;
-    top: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .contact-mail, .contact-tel:hover, .contact-mail, .contact-tel:focus {
     color: #2196F3;
@@ -137,12 +127,15 @@ img {
     padding-bottom: 94px;
     padding-top: 94px;
 }
-.section-nam {
-    position: absolute;
+/* ----------------SERVICE---------------- */
+.service {
+    background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+.service-name {
     width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
+    margin: 0 auto;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -150,36 +143,32 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
-.section-button {
-    position: absolute;
-    width: 216px;
-    height: 50px;
-    left: 692px;
-    top: 430px;
-    font-family: inherit;
+.service-button {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
+    align-items: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: #2196F3;
     border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     width: 216px;
-    height: 50px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
-.section-button:hover,
-.section-button:focus {
+.service-button:hover,
+.service-button:focus {
     background: #188CE8;  
 }
-.section-head {
-    position: absolute;
-    width: 1170px;
-    height: 98px;
-    left: 215px;
-    top: 774px;
-    padding-bottom: 92px;
+.benefits{
+    
+   
 }
 .visually-hidden {
     position: absolute;
@@ -193,10 +182,10 @@ img {
     clip-path: inset(50%);
     margin: -1px;
 }
-.section-bisnes {
+.benefits-list {
     display: flex;
 }
-.section-title {
+.benefits-name {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -204,7 +193,7 @@ img {
     text-transform: uppercase;
     color: #212121;
 }
-.section-text {
+.benefits-text {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -213,21 +202,10 @@ img {
     letter-spacing: 0.03em;
     color: #757575;
 }
-.section-working {
-    position: absolute;
-    width: 1170px;
-    height: 386px;
-    left: 215px;
-    top: 966px;
-    padding-bottom: 92px;
+.working {
+   
 }
 .section-name {
-    position: absolute;
-    width: 366px;
-    height: 42px;
-    left: 617px;
-    top: 966px;
-    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -240,19 +218,9 @@ img {
     justify-content: space-between;
 }
 .section-team {
-    position: absolute;
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    top: 1446px;
     background: #F5F4FA;
 }
 .section-nama {
-    position: absolute;
-    width: 264px;
-    height: 42px;
-    left: 668px;
-    top: 1540px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -262,11 +230,7 @@ img {
 }
 .team {
     display: flex;
-    position: absolute;
-    width: 1170px;
-    height: 368px;
-    left: 215px;
-    top: 1632px;
+    background: #F5F4FA
 }
 .team-members {
     font-family: 'Roboto';
@@ -288,14 +252,11 @@ img {
     letter-spacing: 0.03em;
     color: #757575;
 }
-/*-----foooter------*/
+/* ----------------FOOTER---------------- */
 .footer {
-    position: absolute;
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2094px;
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-logo {
     font-family: 'Raleway';
@@ -304,6 +265,8 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    width: 145px;
+    padding-bottom: 20px;
 }
 .footer-color {
     font-family: 'Raleway';
@@ -315,6 +278,7 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    padding-top: 20px;
 }
 .footer-contact {
     font-style: normal;
@@ -327,6 +291,8 @@ img {
 .footer-contact:focus {
     color: #2196F3;
 }
+
+
 .btn-filter {
     border: none;
     background:#F5F4FA;
